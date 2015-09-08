@@ -1,0 +1,13 @@
+<div class="">
+    <h3>Use compile</h3>
+    <ul>
+        <li ng-repeat="user in users |orderBy:'-username'" title="my name is {{user.username}}">
+            <!--<label>[{{$index + 1}}]</label>-->
+            <!--<label>{{user.username}}</label>-->
+            <!--<a href="#" ng-click="delUser($event, user._id)">delete</a>-->
+            <my-userc temp="user4">first name:</my-userc>
+        </li>
+    </ul>
+
+</div>
+<h3><a href="#/add">add</a></h3>

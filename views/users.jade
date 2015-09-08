@@ -1,0 +1,13 @@
+//
+   Created by DennisHuang on 15/08/18.
+extends layout
+block content
+   h1= title
+   p Welcome to #{title}
+   div.users
+      ul
+         each user, index in users
+            li
+               label= index + ' : ' + user.username
+               a(href='#', onclick='users.delUser("' + user.id +'")') delete
+   a(href='/regist') regist

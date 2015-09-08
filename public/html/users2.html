@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>user list</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <script type='text/javascript' src='/javascripts/jquery-2.1.4.js'></script>
+    <script type='text/javascript' src='/lib/angular/angular.js'></script>
+    <script type='text/javascript' src='/lib/angular-resource/angular-resource.js'></script>
+    <script type='text/javascript' src='/lib/angular-route/angular-route.js'></script>
+    <script type="text/javascript" src ='/javascripts/userservice.js'></script>
+    <script type='text/javascript' src='/javascripts/agusers.js'></script>
+</head>
+<body>
+    <div ng-app="userApp" ng-controller="UserController">
+        <h1>User List<h3>{{today| date: "yyyy/MM/dd"}}</h3></h1>
+        <h2>welcome to user list.</h2>
+        <div ng-view></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+//
+   Created by DennisHuang on 15/08/18.
+extends layout
+block content
+   h1= title
+   p Welcome to #{title}
+   div.registform
+      div.username
+         label username:
+            input(id='username', type='text', name='username')
+      div.password
+         label password:
+            input(id='password', type='password', name='password')
+      a(href='', value='regist', onclick='return users.addUser()') regist

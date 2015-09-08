@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div.loginfm
+    form(name='login',action='/users',method='post')
+      div.username
+        label username:
+          input(id='username', type='text', name='username')
+      div.password
+        label password:
+          input(id='password', type='password', name='password')
+      input(type='submit', value='login')
+  div.reg
+    a(href='/regist') regist

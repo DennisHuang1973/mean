@@ -1,0 +1,6 @@
+<label>{{$index + 1}}.</label>
+<label ng-transclude></label>
+<label ng-hide="!isView">{{user.username}}</label>
+<input type="text" ng-hide="isView">
+<a href="" ng-click="editUser($event, user._id)" ng-hide="!isView">edit</a>
+<a href="" ng-click="cancelEdit($event)" ng-hide="isView">cancel</a>
