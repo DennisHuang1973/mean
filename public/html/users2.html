@@ -13,7 +13,8 @@
 </head>
 <body>
     <div ng-app="userApp" ng-controller="UserController">
-        <h1>User List<h3>{{today| date: "yyyy/MM/dd"}}</h3></h1>
+        <h1>User List<h3><my-clock format="yyyy/MM/dd HH:mm:ss Z" timezone="+0800"></my-clock></h3></h1>
+        <div><my-canvas-clock width="150" height="150" color="#ff00ff"></my-canvas-clock></div>
         <h2>welcome to user list.</h2>
         <div ng-view></div>
     </div>
